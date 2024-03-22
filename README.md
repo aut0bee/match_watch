@@ -61,10 +61,3 @@ Monitoring Summoners
 Refreshed data at 19:18:37.611753
 Match NA1_4948494727 is already in cache
 ```
-
-## Considerations / With More Time
-
-- More testing coverage, a full integration test in particular for the MatchMonitor and its logging system.
-- If the use case was heavier (i.e. more checks for matches than the current every minute for an hour), a GenStage pipeline could be great. Didn't want to overoptimize for the current use case.
-- Scope of this is currently backend focused, but adding a simple LiveView interface is pretty trivial and could be nice to interact with.
-- As an aside, I learned early on that SUMMONER-V4 API is currently deprecated; ACCOUNT-V1 is the new API to replace it. If this technical prompt was for a production environment, I would have returned to the start of changing the feature scope and implementation details with the engineering team, product owners and other management. But since its just a fun technical exercise, all good!
